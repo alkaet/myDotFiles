@@ -99,6 +99,7 @@ setxkbmap -option caps:none
 #Alias
 alias ls='ls --color=auto'
 alias ll='ls -lha'
+alias zsource='source ~/.zshrc'
 
 #Add relevant things to PYTHONPATH
 PYTHONPATH=$PYTHONPATH:relevantPath
