@@ -1,2 +1,2 @@
 # myDotFiles
-Dot Files
+Dot Files for emacs and zsh
