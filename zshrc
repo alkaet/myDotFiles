@@ -26,6 +26,11 @@ autoload -Uz colors
 colors
 prompt adam1
 
+zmodload zsh/complist
+setopt extendedglob
+zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#)*=36=31"
+zstyle ':completion:*' menu select=5
+
 ####################################
 # From Øyvind "Mr.Elendig" Heggstad:
 #Colors
