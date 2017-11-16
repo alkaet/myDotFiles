@@ -52,7 +52,7 @@ man() {
     man "$@"
 }
 ####################################
-#awesome mv,cp,ln
+#Awesome mv,cp,ln
 autoload -U zmv
 alias zcp='zmv -C'
 alias zln='zmv -L'
