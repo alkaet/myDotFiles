@@ -52,7 +52,10 @@ man() {
     man "$@"
 }
 ####################################
-
+#awesome mv,cp,ln
+autoload -U zmv
+alias zcp='zmv -C'
+alias zln='zmv -L'
 
 #Completion and cd options
 #setopt COMPLETE_ALIASES
