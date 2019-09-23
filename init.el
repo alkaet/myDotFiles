@@ -70,8 +70,12 @@
 ;;Activate elpy
 (elpy-enable)
 
-;;enable ipython
-(elpy-use-ipython)
+;;enable jupyter
+(setq python-shell-interpreter "jupyter"
+      python-shell-interpreter-args "console --simple-prompt"
+      python-shell-prompt-detect-failure-warning nil)
+(add-to-list 'python-shell-completion-native-disabled-interpreters
+             "jupyter")
 
 ;;syntax check
 (when (require 'flycheck nil t)
