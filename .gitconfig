@@ -1,0 +1,23 @@
+[alias]
+	cb = checkout -b
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+
+[push]
+	default = upstream
+[fetch]
+	prune = true
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+
+[merge]
+	tool = meld
+
+        
+       
