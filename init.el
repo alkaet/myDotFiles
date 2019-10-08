@@ -1,12 +1,12 @@
 (require 'package)
 
 ;;add melpa and other useful package archives
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
-(when (< emacs-major-version 24)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+;;(when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
-(add-to-list 'package-archives
-             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
+;;  (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/")))
+;;(add-to-list 'package-archives
+;;             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
 
 (package-initialize)
 
@@ -53,7 +53,13 @@
 (put 'upcase-region 'disabled nil)
 
 ;; delete trailing whitespace
-(load-library "ws-butler")
+(load-library "ws-butler")(add-to-list 'package-archives
+9
+             '("elpy" . "http://jorgenschaefer.github.io/packages/"))
+10
+​
+11
+(package-initialize)
 (require 'ws-butler)
 (ws-butler-global-mode 1)
 
@@ -132,8 +138,3 @@ LaTeX-section-title
 LaTeX-section-toc
 LaTeX-section-section
 LaTeX-section-label))
-
-;; For elpy
-(setq elpy-rpc-python-command "python3")
-;; For interactive shell
-(setq python-shell-interpreter "python3")
