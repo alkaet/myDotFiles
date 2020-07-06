@@ -9,7 +9,7 @@ setopt HIST_IGNORE_SPACE # Don't record an entry starting with a space.
 setopt HIST_REDUCE_BLANKS # Remove superfluous blanks before recording entry.
 
 #Bind keys to emacs style
-bindkey -e
+bindkey -v
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
